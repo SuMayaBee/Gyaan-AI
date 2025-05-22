@@ -25,7 +25,7 @@ const Header  = () => {
             <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
                 <Link className="block text-mainColor" href="/">
  
-                    <Image src={"/logo.png"} alt="logo" width={150} height={100}/>
+                    <Image src={"/logo1.jpg"} alt="logo" width={150} height={100}/>
                 </Link>
             
                 <div className="flex flex-1 items-center justify-end md:justify-between">

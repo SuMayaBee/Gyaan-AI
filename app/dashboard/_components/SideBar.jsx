@@ -34,7 +34,7 @@ const SideBar = () => {
   return (
     <div className="h-screen shadow-md p-5">
       <div className="flex items-center justify-center gap-3 py-5">
-        <Image src={'/logo.svg'} alt="logo" height={150} width={200} /> 
+        <Image src={'/logo1.jpg'} alt="logo" height={150} width={200} /> 
       </div>
       
       <div className="mt-10">
