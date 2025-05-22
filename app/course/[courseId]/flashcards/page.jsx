@@ -116,7 +116,7 @@ const Flashcards = () => {
                     variant="ghost"
                     size="sm"
                     onClick={goBack}
-                    className="mb-6 flex items-center gap-1 text-gray-600 hover:text-gray-900"
+                    className="mb-6 flex items-center gap-1 text-gray-600 hover:text-gray-900 cursor-pointer"
                 >
                     <ArrowLeft size={16} />
                     <span>Back to course</span>

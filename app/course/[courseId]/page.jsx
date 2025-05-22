@@ -38,7 +38,7 @@ const Course = () => {
                 variant="ghost"
                 size="sm"
                 onClick={goBack}
-                className="flex items-center gap-1 my-3 text-gray-600 hover:text-gray-900"
+                className="flex items-center gap-1 my-3 text-gray-600 hover:text-gray-900 cursor-pointer"
             >
                 <ArrowLeft size={16} />
                 <span>Back </span>

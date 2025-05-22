@@ -55,10 +55,11 @@ const MaterialCardItem = ({ item, studyTypeContent, course, refreshData }) => {
             <p className="text-gray-600 text-sm text-center">{item.desc}</p>
 
             {contentAvailable ? (
-                <Button>View</Button>
+                <Button className="cursor-pointer">View</Button>
             ) : (
                 <Button
                     variant="outline"
+                    className="cursor-pointer"
                     onClick={handleGenerateContent}
                 >
                     Generate
