@@ -14,12 +14,13 @@ const SideBar = () => {
   
   const MenuList = [
     { name: 'Dashboard', icon: LayoutDashboard, path: '/dashboard' },
-    { name: 'Upgrade', icon: Shield, path: '/dashboard/upgrade' },
-    { name: 'Profile', icon: User, path: '/dashboard/profile' },
+
     { name: 'Collaboration', icon: Video, path: '/dashboard/collaboration' },
     { name: 'Course Chatbot', icon: MessageCircle, path: '/dashboard/chatbot' },
     { name: 'Video Summarization', icon: Video, path: '/dashboard/video-summarization' },
     { name: 'PDF to Podcast', icon: Mic, path: '/dashboard/pdf-to-podcast' },
+    { name: 'Upgrade', icon: Shield, path: '/dashboard/upgrade' },
+    { name: 'Profile', icon: User, path: '/dashboard/profile' },
   ];
 
   const VirtualLabsList = [
