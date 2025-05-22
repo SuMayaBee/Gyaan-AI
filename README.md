@@ -2,9 +2,7 @@
 
 Brightly AI is a comprehensive, AI-driven educational platform that revolutionizes the way students learn and collaborate. Our platform combines cutting-edge artificial intelligence with modern web technologies to create an immersive, interactive, and personalized learning experience.
 
-## 🌟 Demo
 
-**Live Demo**: [Brightly AI Platform - Experience the Future of Learning](https://brightly-ai-demo.vercel.app/)
 
 ## ✨ Features
 
