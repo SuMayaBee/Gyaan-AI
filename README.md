@@ -2,10 +2,16 @@
 
 Brightly AI is a comprehensive, AI-driven educational platform that revolutionizes the way students learn and collaborate. Our platform combines cutting-edge artificial intelligence with modern web technologies to create an immersive, interactive, and personalized learning experience.
 
+## 🌟 Demo
+
+**Live Demo**: [Brightly AI Platform - Experience the Future of Learning](https://brightly-ai-demo.vercel.app/)
+
 ## ✨ Features
 
 ### 🔬 Virtual Labs
 Experience hands-on learning through our AI-powered virtual laboratory environments. Students can conduct experiments, simulations, and practical exercises in a safe, controlled digital environment without the need for physical equipment.
+
+![Virtual Labs Demo](https://via.placeholder.com/800x400/1e40af/ffffff?text=Virtual+Labs+-+Interactive+3D+Simulations)
 
 **Key Capabilities:**
 - Interactive 3D simulations for physics, chemistry, and biology experiments
@@ -13,9 +19,12 @@ Experience hands-on learning through our AI-powered virtual laboratory environme
 - Safe environment to test hypotheses and learn from mistakes
 - Customizable lab scenarios for different skill levels
 - Progress tracking and performance analytics
+- Equipment-free experimentation with realistic physics engines
 
 ### 👥 Collaboration Hub
 Connect with peers and educators through our integrated video collaboration platform. Foster teamwork and enhance learning through real-time communication and shared workspaces.
+
+![Collaboration Platform](https://via.placeholder.com/800x400/059669/ffffff?text=Collaboration+Hub+-+Video+Calls+%26+Whiteboards)
 
 **Key Capabilities:**
 - HD video calls with screen sharing capabilities
@@ -24,9 +33,25 @@ Connect with peers and educators through our integrated video collaboration plat
 - Recording functionality for session playback
 - Integrated chat and file sharing
 - Cross-platform compatibility (desktop, tablet, mobile)
+- Real-time collaborative document editing
+
+### 📚 Adaptive Course Creation
+Create personalized learning experiences with our AI-powered adaptive course creation system. Generate interactive content that adapts to individual learning styles and progress.
+
+![Adaptive Course Creation](https://via.placeholder.com/800x400/7c3aed/ffffff?text=Adaptive+Learning+-+Flashcards+%26+Quizzes)
+
+**Key Capabilities:**
+- **AI-Generated Flashcards**: Automatically create flashcards from any content with spaced repetition algorithms
+- **Adaptive Quizzes**: Dynamic quiz generation that adjusts difficulty based on performance
+- **Personalized Learning Paths**: Custom course sequences tailored to individual learning needs
+- **Progress Analytics**: Detailed insights into learning patterns and knowledge retention
+- **Multi-format Content**: Support for text, images, videos, and interactive elements
+- **Smart Recommendations**: AI-powered suggestions for optimal study schedules and content review
 
 ### 🤖 Course Chatbot
 Our intelligent AI chatbot serves as your personal learning assistant, available 24/7 to answer questions, provide explanations, and guide you through complex topics.
+
+![AI Course Chatbot](https://via.placeholder.com/800x400/dc2626/ffffff?text=AI+Chatbot+-+24%2F7+Learning+Assistant)
 
 **Key Capabilities:**
 - Context-aware responses based on your current course material
@@ -35,9 +60,12 @@ Our intelligent AI chatbot serves as your personal learning assistant, available
 - Instant answers to frequently asked questions
 - Integration with course content and assignments
 - Natural language processing for conversational interactions
+- Voice-to-text and text-to-speech functionality
 
 ### 📹 Video Summarization
 Transform lengthy educational videos into concise, digestible summaries using advanced AI algorithms. Never miss important concepts while saving valuable study time.
+
+![Video Summarization](https://via.placeholder.com/800x400/ea580c/ffffff?text=Video+Summarization+-+AI+Powered+Insights)
 
 **Key Capabilities:**
 - Automatic extraction of key concepts and timestamps
@@ -45,29 +73,36 @@ Transform lengthy educational videos into concise, digestible summaries using ad
 - Visual highlights and important moment markers
 - Searchable transcripts with keyword highlighting
 - Multi-format export (text, audio, visual notes)
-- Integration with popular video platforms
+- Integration with popular video platforms (YouTube, Vimeo, custom uploads)
+- Chapter-based navigation and bookmarking
 
 ### 🎧 PDF to Podcast
 Convert static PDF documents into engaging audio content. Perfect for auditory learners and on-the-go studying.
 
+![PDF to Podcast Converter](https://via.placeholder.com/800x400/0891b2/ffffff?text=PDF+to+Podcast+-+Audio+Learning)
+
 **Key Capabilities:**
-- Natural-sounding AI voice synthesis
-- Multiple voice options and speaking speeds
-- Chapter-based audio segmentation
+- Natural-sounding AI voice synthesis with multiple accent options
+- Multiple voice types and adjustable speaking speeds
+- Chapter-based audio segmentation with smart breaks
 - Background music and sound effects options
-- Offline listening capabilities
+- Offline listening capabilities with mobile app sync
 - Automatic bookmark creation for easy navigation
+- Batch processing for multiple documents
 
 ### 👨‍🏫 Talk to Mentor
 Connect with AI-powered mentors and real human experts for personalized guidance and career advice. Get the support you need to achieve your learning goals.
+
+![Mentor Platform](https://via.placeholder.com/800x400/16a34a/ffffff?text=Talk+to+Mentor+-+Expert+Guidance)
 
 **Key Capabilities:**
 - AI mentors specialized in different subjects and industries
 - Real-time advice and study plan recommendations
 - Career pathway guidance and skill assessment
-- Goal setting and progress tracking
+- Goal setting and progress tracking with milestone celebrations
 - Scheduling system for human mentor sessions
 - Personalized feedback on assignments and projects
+- Industry-specific mentorship programs
 
 ## 🚀 Getting Started
 
@@ -75,6 +110,8 @@ Connect with AI-powered mentors and real human experts for personalized guidance
 - Node.js 18.0 or later
 - npm or yarn package manager
 - Git
+- PostgreSQL database
+- Express.js knowledge (for backend development)
 
 ### Installation
 
@@ -82,7 +119,6 @@ Connect with AI-powered mentors and real human experts for personalized guidance
   ```bash
   git clone https://github.com/your-username/brightly-ai.git
   cd brightly-ai
-
 # Install dependencies
 npm install
 
@@ -97,9 +133,10 @@ npx inngest-cli@latest dev
 # Start Next.js development server
 npm run dev
 ```
+
 # Database Configuration
-```bash
-DATABASE_URL=your_database_connection_string
+```
+DATABASE_URL=postgresql://username:password@localhost:5432/brightly_ai
 
 # AI Services
 OPENAI_API_KEY=your_openai_api_key
@@ -120,4 +157,145 @@ CLOUDINARY_API_SECRET=your_cloudinary_secret
 
 # Serverless Functions
 VERCEL_URL=your_deployment_url
+INNGEST_EVENT_KEY=your_inngest_event_key
+
+# Express.js Backend
+EXPRESS_SERVER_URL=http://localhost:8000
+JWT_SECRET=your_jwt_secret_key
 ```
+
+# 🚀 Getting Started with Virtual Labs
+
+**Open Your Application**  
+Navigate to: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🎯 How to Use
+
+### 🔬 Virtual Labs
+
+1. Navigate to the **"Virtual Labs"** section from the main dashboard
+2. Select your subject area (Physics, Chemistry, Biology, etc.)
+3. Choose an experiment or create a custom simulation
+4. Follow the interactive guided tutorial with step-by-step instructions
+5. Conduct your experiment and analyze results in real-time
+6. Save your work, generate reports, and share findings with peers
+7. Access lab history and compare results across multiple sessions
+
+---
+
+### 🤝 Using the Collaboration Platform
+
+1. Create or join a study room from the **"Collaborate"** tab
+2. Invite classmates using room codes, direct links, or email invitations
+3. Use the integrated whiteboard for visual explanations and brainstorming
+4. Share your screen to present materials and demonstrate concepts
+5. Create breakout rooms for smaller group discussions
+6. Record sessions for later review and absent participants
+7. Access chat history, shared files, and session recordings anytime
+
+---
+
+### 🧠 Creating Adaptive Learning Content
+
+1. Go to **"Course Creation"** and select **"New Adaptive Course"**
+2. Upload your source material (PDFs, videos, text content)
+3. Let AI analyze and create initial flashcards and quiz questions
+4. Review and customize generated content to match your learning objectives
+5. Set difficulty levels and progression criteria
+6. Test the adaptive algorithms with sample learning sessions
+7. Publish your course and track student engagement analytics
+
+---
+
+### 💬 Interacting with the Course Chatbot
+
+1. Click the chat icon available on any course page or use the floating chat bubble
+2. Ask questions in natural language about course content
+3. Request explanations, examples, or clarifications on complex topics
+4. Use voice commands for hands-free interaction while studying
+5. Access conversation history and bookmark important responses
+6. Set up study reminders and get personalized learning suggestions
+7. Export chat conversations as study notes
+
+---
+
+### 🎞️ Creating Video Summaries
+
+1. Upload your video file or paste a YouTube/Vimeo URL
+2. Select desired summary length (brief, detailed, comprehensive)
+3. Choose focus areas (key concepts, formulas, examples, etc.)
+4. Wait for AI processing (typically 2–5 minutes depending on video length)
+5. Review generated summary with clickable timestamps
+6. Edit and annotate summaries with personal notes
+7. Export in your preferred format and share with study groups
+
+---
+
+### 🎧 Converting PDFs to Podcasts
+
+1. Upload your PDF document using the drag-and-drop interface
+2. Choose voice type, accent, and speaking speed preferences
+3. Select background music and sound effect options
+4. Preview the first few minutes to ensure quality
+5. Generate full podcast (processing time varies by document length)
+6. Download audio files in multiple formats (MP3, WAV, M4A)
+7. Sync with your preferred podcast app or listen directly in-browser
+
+---
+
+### 🎓 Connecting with Mentors
+
+1. Browse available mentors by subject, expertise level, or ratings
+2. Read mentor profiles, specializations, and student reviews
+3. Schedule sessions through the integrated calendar system
+4. Join video calls at scheduled times with prepared questions
+5. Access AI mentor chat for instant guidance between sessions
+6. Review session notes, recommendations, and action items
+7. Track your progress toward goals and celebrate achievements
+
+---
+
+## 🛠 Technology Stack
+
+### Frontend
+
+- **Framework**: Next.js 14 with App Router  
+- **Language**: TypeScript for type safety  
+- **Styling**: Tailwind CSS with custom design system  
+- **UI Components**: Headless UI and Radix UI primitives  
+- **Animations**: Framer Motion for smooth interactions  
+- **State Management**: Zustand for client-side state  
+- **Forms**: React Hook Form with Zod validation  
+
+---
+
+### Backend
+
+- **API Framework**: Express.js with TypeScript  
+- **Database**: PostgreSQL with connection pooling  
+- **ORM**: Drizzle ORM for type-safe database queries  
+- **Authentication**: NextAuth.js with JWT tokens  
+- **File Storage**: Cloudinary for media management  
+- **Serverless Functions**: Inngest for background jobs  
+- **Caching**: Redis for session and data caching  
+
+---
+
+### AI & Machine Learning
+
+- **Large Language Models**: OpenAI GPT-4, Google Gemini Pro  
+- **Voice Synthesis**: ElevenLabs API for natural speech  
+- **Computer Vision**: TensorFlow.js for image processing  
+- **Natural Language Processing**: Hugging Face Transformers  
+- **Adaptive Learning**: Custom ML algorithms for personalization  
+
+---
+
+
+
+Thank you for exploring our next-generation learning platform. Whether you're conducting experiments, collaborating with peers, or personalizing your study journey, we’re here to empower your education every step of the way.
+
+---
+**Built by passionate educators, developers, and innovators — committed to shaping the future of learning. 🚀**
