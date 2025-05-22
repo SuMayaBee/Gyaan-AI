@@ -2,7 +2,7 @@
 import { CourseCountContext } from "@/app/_Context/CourseCountContext";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { LayoutDashboard, Shield, User, Flask, Atom, Microscope, Beaker, ChevronDown, ChevronUp } from "lucide-react";
+import { LayoutDashboard, Shield, User, Flask, Atom, Microscope, Beaker, ChevronDown, ChevronUp, Video } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -27,6 +27,11 @@ const SideBar = () => {
       name: "Profile",
       icon: User,
       path: "/dashboard/profile",
+    },
+    {
+      name: "Collaboration",
+      icon: Video,
+      path: "/dashboard/collaboration",
     },
   ];
 
