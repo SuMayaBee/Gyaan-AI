@@ -22,9 +22,9 @@ export default function Hero({ handleAuthRequiredAction }) {
             className="text-center lg:text-left"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Create Courses with
+             চলো শিখি,
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4b5ae4] to-[#8a94ff] block mt-2">
-                AI-Powered Magic
+                 এবার AI-এর সাথে
               </span>
             </h1>
 
@@ -75,7 +75,7 @@ export default function Hero({ handleAuthRequiredAction }) {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
               <div className="absolute inset-0 bg-gradient-to-br from-[#4b5ae4]/80 to-purple-600/80 mix-blend-multiply"></div>
               <img
-                src="/placeholder.svg?height=600&width=800"
+                src="https://images.unsplash.com/photo-1610484826917-0f101a7bf7f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="AI Course Creation Platform"
                 className="w-full h-auto"
               />

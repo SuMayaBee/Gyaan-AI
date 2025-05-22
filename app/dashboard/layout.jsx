@@ -15,7 +15,7 @@ const DashboardLayout = ({ children }) => {
           <header>
             <DashboardHeader />
           </header> 
-          <main className="flex-1 p-6 bg-gray-100">{children}</main>
+          <main className="flex-1 p-12 bg-gray-100">{children}</main>
         </div>
         <Toaster />
       </div>
