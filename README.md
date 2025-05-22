@@ -11,7 +11,7 @@ Brightly AI is a comprehensive, AI-driven educational platform that revolutioniz
 ### 🔬 Virtual Labs
 Experience hands-on learning through our AI-powered virtual laboratory environments. Students can conduct experiments, simulations, and practical exercises in a safe, controlled digital environment without the need for physical equipment.
 
-![Virtual Labs Demo](https://via.placeholder.com/800x400/1e40af/ffffff?text=Virtual+Labs+-+Interactive+3D+Simulations)
+![Virtual Labs Demo](https://i.ibb.co/20wD8rNr/50698-CA5-BFB9-4-E83-AFA3-49-CA2-EA45517.png)
 
 **Key Capabilities:**
 - Interactive 3D simulations for physics, chemistry, and biology experiments
