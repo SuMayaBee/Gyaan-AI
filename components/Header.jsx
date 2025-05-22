@@ -2,164 +2,158 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { UserButton, useUser } from "@clerk/nextjs"; 
-import Link from "next/link";
-import Image from "next/image";
-const Header  = () => {
-    const user = useUser();
-    const router = useRouter();
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+import { motion } from "framer-motion";
+import { BookOpen, Menu, X, User } from "lucide-react";
 
-    const handleSignIn = () => {
-        router.push("/sign-in");
-    };
+export default function Header({ user, isLoaded, handleAuthRequiredAction }) {
+  const router = useRouter();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  console.log("user: ", user, isLoaded);
+  return (
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-[#4b5ae4]/20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="w-fit h-full">
+            {" "}
+            {/* You can adjust h-32 as needed */}
+            <img
+              src="/logo2.png"
+              alt="brightly-logo"
+              className="w-full h-full object-contain"
+            />
+          </div>
 
-    const handleSignUp = () => {
-        router.push("/sign-up");
-    };
-
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
-
-    return (
-        <header className="bg-white shadow-md">
-            <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-                <Link className="block text-mainColor" href="/">
- 
-                    <Image src={"/logo1.jpg"} alt="logo" width={150} height={100}/>
-                </Link>
-            
-                <div className="flex flex-1 items-center justify-end md:justify-between">
-                    {/* Desktop Navigation */}
-                    <nav
-                        aria-label="Global"
-                        className={`hidden md:block ${isMobileMenuOpen ? "block" : "hidden"
-                            }`}
-                    >
-                        <ul className="flex items-center gap-6 text-sm">
-                            <li>
-                                <a
-                                    className="text-gray-500 transition hover:text-gray-500/75"
-                                    href="#"
-                                >
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    className="text-gray-500 transition hover:text-gray-500/75"
-                                    href="#"
-                                >
-                                    Careers
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    className="text-gray-500 transition hover:text-gray-500/75"
-                                    href="#"
-                                >
-                                    History
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    className="text-gray-500 transition hover:text-gray-500/75"
-                                    href="#"
-                                >
-                                    Services
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    {/* Desktop & Mobile Buttons */}
-                    <div className="flex items-center gap-4">
-                        {user ? (
-                            <UserButton />
-                        ) : (
-                            <div className="sm:flex sm:gap-4">
-                                <button
-                                    onClick={handleSignIn}
-                                    className="block rounded-md bg-mainColor px-5 py-2.5 text-sm font-medium text-white transition hover:bg-mainColor-dark"
-                                >
-                                    Sign In
-                                </button>
-                                <button
-                                    onClick={handleSignUp}
-                                    className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-text-mainColor transition hover:text-text-mainColor-dark sm:block"
-                                >
-                                    Sign Up
-                                </button>
-                            </div>
-                        )}
-
-                        {/* Mobile Menu Toggle Button */}
-                        <button
-                            className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
-                            onClick={toggleMobileMenu}
-                        >
-                            <span className="sr-only">Toggle menu</span>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M4 6h16M4 12h16M4 18h16"
-                                />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            {/* Mobile Navigation */}
-            {isMobileMenuOpen && (
-                <nav aria-label="Mobile Global" className="md:hidden">
-                    <ul className="flex flex-col gap-4 p-4 text-sm">
-                        <li>
-                            <a
-                                className="text-gray-500 transition hover:text-gray-500/75"
-                                href="#"
-                            >
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                className="text-gray-500 transition hover:text-gray-500/75"
-                                href="#"
-                            >
-                                Careers
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                className="text-gray-500 transition hover:text-gray-500/75"
-                                href="#"
-                            >
-                                History
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                className="text-gray-500 transition hover:text-gray-500/75"
-                                href="#"
-                            >
-                                Services
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+          <nav className="hidden md:flex space-x-8">
+            {["Features", "Platform", "Use Cases", "Testimonials"].map(
+              (item, i) => (
+                <motion.a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(" ", "-")}`}
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 * i }}
+                  className="text-gray-700 hover:text-[#4b5ae4] font-medium transition-colors cursor-pointer"
+                >
+                  {item}
+                </motion.a>
+              )
             )}
-        </header>
-    );
-};
+          </nav>
 
-export default Header;
+          <div className="flex items-center space-x-3">
+            {isLoaded ? (
+              user ? (
+                <motion.div className="flex items-center space-x-3">
+                  <div
+                    className="flex items-center space-x-2 cursor-pointer"
+                    onClick={() =>
+                      handleAuthRequiredAction("/dashboard/profile")
+                    }
+                  >
+                    <div className="w-12 h-10 rounded-full bg-gradient-to-br from-[#4b5ae4] to-[#6a78ff] flex items-center justify-center text-white border-2 border-white shadow-md">
+                      {user.imageUrl ? (
+                        <img
+                          src={user.imageUrl || "/placeholder.svg"}
+                          alt={user.fullName}
+                          className="w-12 h-10 rounded-full border-2 border-white"
+                        />
+                      ) : (
+                        <User className="h-5 w-5" />
+                      )}
+                    </div>
+                    <span className="hidden sm:inline-block text-sm font-medium text-gray-700">
+                      {user.fullName || user.username || "User"}
+                    </span>
+                  </div>
+                  <motion.button
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    onClick={() => handleAuthRequiredAction("/dashboard")}
+                    className="inline-flex items-center justify-center h-10 px-4 py-2 bg-gradient-to-r from-[#4b5ae4] to-[#6a78ff] text-white rounded-md font-medium transition-all duration-200 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer border border-white"
+                  >
+                    Dashboard
+                  </motion.button>
+                </motion.div>
+              ) : (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="flex items-center space-x-3"
+                >
+                  <button
+                    onClick={() => router.push("/sign-in")}
+                    className="hidden sm:inline-flex items-center justify-center h-10 px-4 py-2 border-2 border-[#4b5ae4] text-[#4b5ae4] rounded-md font-medium transition-all duration-200 hover:bg-[#4b5ae4]/10 hover:shadow-md active:scale-95 cursor-pointer"
+                  >
+                    Sign In
+                  </button>
+                  <button
+                    onClick={() => router.push("/sign-up")}
+                    className="inline-flex items-center justify-center h-10 px-4 py-2 bg-gradient-to-r from-[#4b5ae4] to-[#6a78ff] text-white rounded-md font-medium transition-all duration-200 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer border border-white"
+                  >
+                    Sign Up
+                  </button>
+                </motion.div>
+              )
+            ) : (
+              // Loading state
+              <div className="flex items-center space-x-3">
+                <div className="hidden sm:block w-20 h-10 bg-gray-200 rounded-md animate-pulse"></div>
+                <div className="w-24 h-10 bg-gray-200 rounded-md animate-pulse"></div>
+              </div>
+            )}
+
+            {/* Mobile menu button */}
+            <div className="flex md:hidden">
+              <button
+                type="button"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#4b5ae4] hover:bg-gray-100 focus:outline-none"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                <span className="sr-only">Open main menu</span>
+                {mobileMenuOpen ? (
+                  <X className="block h-6 w-6" />
+                ) : (
+                  <Menu className="block h-6 w-6" />
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-white border-b border-gray-200">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {["Features", "Platform", "Use Cases", "Testimonials"].map(
+              (item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(" ", "-")}`}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#4b5ae4] hover:bg-gray-50 cursor-pointer"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item}
+                </a>
+              )
+            )}
+            {!user && isLoaded && (
+              <a
+                href="/sign-in"
+                className="block px-3 py-2 rounded-md text-base font-medium text-[#4b5ae4] hover:bg-gray-50 cursor-pointer"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  router.push("/sign-in");
+                }}
+              >
+                Sign In
+              </a>
+            )}
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}
