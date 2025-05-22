@@ -38,7 +38,10 @@ Connect with peers and educators through our integrated video collaboration plat
 ### 📚 Adaptive Course Creation
 Create personalized learning experiences with our AI-powered adaptive course creation system. Generate interactive content that adapts to individual learning styles and progress.
 
-![Adaptive Course Creation](https://via.placeholder.com/800x400/7c3aed/ffffff?text=Adaptive+Learning+-+Flashcards+%26+Quizzes)
+![Adaptive Course Creation](https://i.ibb.co/tTgcd0F2/36-E7-E815-E68-D-40-D3-81-D7-81-A73-F228919.png)
+![Adaptive Course Creation](https://i.ibb.co/zhGDJQCq/FBC3-CF80-D296-41-C2-9178-C268-D3-D58-D11.png)
+![Adaptive Course Creation](https://i.ibb.co/b421c2F/47-D93-BE6-A6-FE-482-B-A08-D-3615679-EEAE8.png)
+
 
 **Key Capabilities:**
 - **AI-Generated Flashcards**: Automatically create flashcards from any content with spaced repetition algorithms
@@ -51,7 +54,7 @@ Create personalized learning experiences with our AI-powered adaptive course cre
 ### 🤖 Course Chatbot
 Our intelligent AI chatbot serves as your personal learning assistant, available 24/7 to answer questions, provide explanations, and guide you through complex topics.
 
-![AI Course Chatbot](https://via.placeholder.com/800x400/dc2626/ffffff?text=AI+Chatbot+-+24%2F7+Learning+Assistant)
+![AI Course Chatbot](https://i.ibb.co/6c9T6v8Q/A93-D49-F2-C112-4412-93-F1-CDCD54439418.png)
 
 **Key Capabilities:**
 - Context-aware responses based on your current course material
