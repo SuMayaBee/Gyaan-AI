@@ -38,6 +38,7 @@ Connect with peers and educators through our integrated video collaboration plat
 ### 📚 Adaptive Course Creation
 Create personalized learning experiences with our AI-powered adaptive course creation system. Generate interactive content that adapts to individual learning styles and progress.
 
+![Adaptive Course Creation](https://i.ibb.co/YzX5PGF/dc9f2086-27d3-488a-84ed-c6d5e823838e.jpg)
 ![Adaptive Course Creation](https://i.ibb.co/tTgcd0F2/36-E7-E815-E68-D-40-D3-81-D7-81-A73-F228919.png)
 ![Adaptive Course Creation](https://i.ibb.co/zhGDJQCq/FBC3-CF80-D296-41-C2-9178-C268-D3-D58-D11.png)
 ![Adaptive Course Creation](https://i.ibb.co/b421c2F/47-D93-BE6-A6-FE-482-B-A08-D-3615679-EEAE8.png)
@@ -68,7 +69,7 @@ Our intelligent AI chatbot serves as your personal learning assistant, available
 ### 📹 Video Summarization
 Transform lengthy educational videos into concise, digestible summaries using advanced AI algorithms. Never miss important concepts while saving valuable study time.
 
-![Video Summarization](https://via.placeholder.com/800x400/ea580c/ffffff?text=Video+Summarization+-+AI+Powered+Insights)
+![Video Summarization](https://i.ibb.co/21wN1MtC/503-DF954-6-F40-4-A7-A-BE6-E-D9-F44-CD8-ADCD.png)
 
 **Key Capabilities:**
 - Automatic extraction of key concepts and timestamps
@@ -82,7 +83,7 @@ Transform lengthy educational videos into concise, digestible summaries using ad
 ### 🎧 PDF to Podcast
 Convert static PDF documents into engaging audio content. Perfect for auditory learners and on-the-go studying.
 
-![PDF to Podcast Converter](https://via.placeholder.com/800x400/0891b2/ffffff?text=PDF+to+Podcast+-+Audio+Learning)
+![PDF to Podcast Converter](https://i.ibb.co/k2fxf1Bj/3-C174-A35-FC77-41-DE-93-E6-7887014-F51-CB.png)
 
 **Key Capabilities:**
 - Natural-sounding AI voice synthesis with multiple accent options
@@ -96,7 +97,6 @@ Convert static PDF documents into engaging audio content. Perfect for auditory l
 ### 👨‍🏫 Talk to Mentor
 Connect with AI-powered mentors and real human experts for personalized guidance and career advice. Get the support you need to achieve your learning goals.
 
-![Mentor Platform](https://via.placeholder.com/800x400/16a34a/ffffff?text=Talk+to+Mentor+-+Expert+Guidance)
 
 **Key Capabilities:**
 - AI mentors specialized in different subjects and industries
