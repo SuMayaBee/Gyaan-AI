@@ -88,12 +88,7 @@ export default function Header({ user, isLoaded, handleAuthRequiredAction }) {
                   >
                     Sign In
                   </button>
-                  <button
-                    onClick={() => router.push("/sign-up")}
-                    className="inline-flex items-center justify-center h-10 px-4 py-2 bg-gradient-to-r from-[#4b5ae4] to-[#6a78ff] text-white rounded-md font-medium transition-all duration-200 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer border border-white"
-                  >
-                    Sign Up
-                  </button>
+                 
                 </motion.div>
               )
             ) : (
