@@ -1,8 +1,8 @@
-# জ্ঞান AI - AI-Powered Learning Platform
+# Brightly AI - AI-Powered Learning Platform
 
-জ্ঞান AI is an AI-driven learning platform designed to enhance the educational experience. It allows users to create learning content, generate flashcards, quizzes, and much more using artificial intelligence for an optimized learning process.
+Brightly AI is an AI-driven learning platform designed to enhance the educational experience. It allows users to create learning content, generate flashcards, quizzes, and much more using artificial intelligence for an optimized learning process.
 
-## 🚀 Features
+##  Features
 
 - **AI-Powered Content Creation**: Generate educational content effortlessly with AI.
 - **Flashcards & Quizzes**: Automatically create interactive flashcards and quizzes.
@@ -10,11 +10,11 @@
 - **Serverless Functions**: Uses Inngest for seamless backend processes.
 - **Next.js & Tailwind**: Modern frontend stack for performance and scalability.
 
-## 🎬 Demo
+##  Demo
 
-🔗 **Live Demo**: [AI LMS - SalamHack](https://ai-lms-salamhack.vercel.app/)
+ **Live Demo**: [AI LMS - SalamHack](https://ai-lms-salamhack.vercel.app/)
 
-## 🛠️ Getting Started
+## 🛠 Getting Started
 
 ### First Run
 
@@ -54,20 +54,20 @@ CLERK_SECRET_KEY=your_clerk_secret_key
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 ```
 
-## 📚 Learn More
+##  Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs) - Explore Next.js features.
 - [Inngest Documentation](https://www.inngest.com/docs) - Learn about serverless functions.
 - [Tailwind CSS](https://tailwindcss.com/docs) - Styling framework for modern UI.
 - [Drizzle ORM](https://orm.drizzle.team) - Learn about the database ORM used.
 
-## 🚀 Deployment
+##  Deployment
 
 Deploy easily on **Vercel**:
 
 [Deploy on Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Feel free to submit issues and pull requests to improve জ্ঞান AI.
 
