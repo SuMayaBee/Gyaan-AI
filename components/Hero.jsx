@@ -35,7 +35,7 @@ export default function Hero({ handleAuthRequiredAction }) {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
-                onClick={() => handleAuthRequiredAction("/create-course")}
+                onClick={() => handleAuthRequiredAction("/dashboard")}
                 className="inline-flex items-center justify-center h-14 px-8 py-4 bg-gradient-to-r from-[#4b5ae4] to-[#6a78ff] text-white rounded-xl font-medium text-lg transition-all duration-200 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer border-2 border-white"
               >
                 Get Started Free
