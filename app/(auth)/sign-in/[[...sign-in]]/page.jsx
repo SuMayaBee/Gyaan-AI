@@ -18,7 +18,7 @@ export default function Page() {
         >
           <div className="max-w-xl   flex flex-col gap-4">
             <h1 className="mt-6 text-2xl text-center font-bold text-gray-900 sm:text-3xl md:text-4xl">
-              Welcome to <span className=' text-mainColor'>Learnify</span>
+              Welcome to <span className=' text-mainColor'>জ্ঞান</span>
             </h1>
 
             <SignIn />

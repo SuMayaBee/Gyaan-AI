@@ -29,6 +29,7 @@ export default function Header({ user, isLoaded, handleAuthRequiredAction }) {
             </motion.div>
           </div>
 
+
           <nav className="hidden md:flex space-x-8">
             {["Features", "Platform", "Use Cases", "Testimonials"].map((item, i) => (
               <motion.a
@@ -44,6 +45,7 @@ export default function Header({ user, isLoaded, handleAuthRequiredAction }) {
             ))}
           </nav>
 
+   
           <div className="flex items-center space-x-3">
             {isLoaded ? (
               user ? (
