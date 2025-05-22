@@ -40,19 +40,7 @@ export default function NotFound() {
         <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-gradient-to-tr from-yellow-200/20 to-orange-300/10 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Header */}
-      <header className="relative z-10 bg-white/90 backdrop-blur-md border-b-2 border-[#4b5ae4]/20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-16 md:h-20">
-            <div className="flex items-center cursor-pointer" onClick={() => router.push("/")}>
-              <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#4b5ae4] to-[#6a78ff] flex items-center justify-center mr-2 border-2 border-white shadow-md">
-                <BookOpen className="h-5 w-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">EduGenAI</span>
-            </div>
-          </div>
-        </div>
-      </header>
+  
 
       {/* Main Content */}
       <main className="flex-grow flex items-center justify-center relative z-10 py-12 px-4">
@@ -198,7 +186,7 @@ export default function NotFound() {
       {/* Footer */}
       <footer className="relative z-10 bg-white/80 backdrop-blur-md border-t border-gray-200 py-4">
         <div className="container mx-auto px-4 text-center text-gray-500 text-sm">
-          © 2025 EduGenAI. All rights reserved.
+          © 2025 Brightly AI. All rights reserved.
         </div>
       </footer>
     </div>
