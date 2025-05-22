@@ -262,37 +262,28 @@ Navigate to: [http://localhost:3000](http://localhost:3000)
 
 ### Frontend
 
-- **Framework**: Next.js 14 with App Router  
-- **Language**: TypeScript for type safety  
+- **Framework**: Next.js 15 with App Router  
 - **Styling**: Tailwind CSS with custom design system  
 - **UI Components**: Headless UI and Radix UI primitives  
 - **Animations**: Framer Motion for smooth interactions  
-- **State Management**: Zustand for client-side state  
 - **Forms**: React Hook Form with Zod validation  
 
 ---
 
 ### Backend
 
-- **API Framework**: Express.js with TypeScript  
+- **API Framework**: Express.js  
 - **Database**: PostgreSQL with connection pooling  
 - **ORM**: Drizzle ORM for type-safe database queries  
-- **Authentication**: NextAuth.js with JWT tokens  
-- **File Storage**: Cloudinary for media management  
+- **Authentication**: Clerk  
 - **Serverless Functions**: Inngest for background jobs  
-- **Caching**: Redis for session and data caching  
 
 ---
 
 ### AI & Machine Learning
 
-- **Large Language Models**: OpenAI GPT-4, Google Gemini Pro  
-- **Voice Synthesis**: ElevenLabs API for natural speech  
-- **Computer Vision**: TensorFlow.js for image processing  
-- **Natural Language Processing**: Hugging Face Transformers  
+- **Large Language Models**: OpenAI GPT-4, Google Gemini
 - **Adaptive Learning**: Custom ML algorithms for personalization  
-
----
 
 
 
