@@ -24,7 +24,7 @@ Experience hands-on learning through our AI-powered virtual laboratory environme
 ### 👥 Collaboration Hub
 Connect with peers and educators through our integrated video collaboration platform. Foster teamwork and enhance learning through real-time communication and shared workspaces.
 
-![Collaboration Platform](https://via.placeholder.com/800x400/059669/ffffff?text=Collaboration+Hub+-+Video+Calls+%26+Whiteboards)
+![Collaboration Platform](https://i.ibb.co/S2zHZP1/F3-D0683-C-FBF8-4-E15-9-ABE-7-CBCB76-CE53-A.png)
 
 **Key Capabilities:**
 - HD video calls with screen sharing capabilities
