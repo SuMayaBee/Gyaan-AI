@@ -31,7 +31,7 @@ const CourseCardItem = ({ course }) => {
                             Generating...
                         </Button>
                     ) : (
-                        <Link href={`/course/${course?.courseId}`}>
+                        <Link href={`/course/${course?.courseId}`} className='cursor-pointer'>
                             <Button>View Course</Button>
                         </Link>
                     )}
