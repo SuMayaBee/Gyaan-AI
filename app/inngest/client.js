@@ -4,5 +4,5 @@ import { Inngest } from "inngest";
 export const inngest = new Inngest({
  id: "ai-lms",
   eventKey:
-    "kredD78zfedLFN_5pq6_UwjIOFnAwZW6AArZePX67QiCKUsyUqRt_OlQtnG5L0eI1x1q2HblJKXVD1RzQpg5lQ",
+    "Jb1K9KZCNwaCm1SPvkPv3cvBvfydoML-qIMQ5rT40sWcvcxokGafYZslg8rZW7Nl1JCzeqVe7YzeNEfSK4bdvg",
 });
