@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useCallback, useEffect } from 'react';
+import Image from 'next/image';
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import { Play, Pause, Trash2, Plus, Battery, Lightbulb, Cpu } from "lucide-react";
@@ -113,7 +114,18 @@ const PhysicsVirtualLab = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Physics Virtual Lab</h1>
+      <div className="flex items-center justify-center mb-6">
+        <div className="mr-4">
+          <Image 
+            src="/physics-logo.svg" 
+            alt="Physics Lab Logo" 
+            width={60} 
+            height={60} 
+            className="rounded-full bg-indigo-100 p-2"
+          />
+        </div>
+        <h1 className="text-3xl font-bold">Physics Virtual Lab</h1>
+      </div>
       
       <div className="bg-white p-4 rounded-lg shadow-md mb-6">
         <div className="flex space-x-4 border-b pb-4">

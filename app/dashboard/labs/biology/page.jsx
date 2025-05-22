@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -273,7 +274,18 @@ const BiologyVirtualLab = () => {
   
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Biology Virtual Lab</h1>
+      <div className="flex items-center justify-center mb-6">
+        <div className="mr-4">
+          <Image 
+            src="/biology-logo.svg" 
+            alt="Biology Lab Logo" 
+            width={60} 
+            height={60} 
+            className="rounded-full bg-green-100 p-2"
+          />
+        </div>
+        <h1 className="text-3xl font-bold">Biology Virtual Lab</h1>
+      </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white p-6 rounded-lg shadow-md md:col-span-2">

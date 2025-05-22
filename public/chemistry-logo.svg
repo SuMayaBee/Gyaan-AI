@@ -1,0 +1,23 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Laboratory flask with bubbles -->
+  <path d="M200 128V320C200 364.183 235.817 400 280 400H232C187.817 400 152 364.183 152 320V128H200Z" fill="#E1F5FE"/>
+  <path d="M312 128V320C312 364.183 347.817 400 392 400H344C299.817 400 264 364.183 264 320V128H312Z" fill="#E1F5FE"/>
+  
+  <!-- Flask outline -->
+  <path d="M370 400H142C111.072 400 86 374.928 86 344C86 333.22 88.87 322.86 94.11 313.91L176 176V112H144C135.16 112 128 104.84 128 96C128 87.16 135.16 80 144 80H368C376.84 80 384 87.16 384 96C384 104.84 376.84 112 368 112H336V176L417.89 313.91C423.13 322.86 426 333.22 426 344C426 374.928 400.928 400 370 400Z" stroke="#3949AB" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Molecules/atoms -->
+  <circle cx="240" cy="240" r="24" fill="#F44336"/>
+  <circle cx="200" cy="180" r="16" fill="#4CAF50"/>
+  <circle cx="300" cy="210" r="20" fill="#2196F3"/>
+  
+  <!-- Chemical bonds -->
+  <line x1="240" y1="240" x2="200" y2="180" stroke="#9E9E9E" stroke-width="4"/>
+  <line x1="240" y1="240" x2="300" y2="210" stroke="#9E9E9E" stroke-width="4"/>
+  
+  <!-- Bubbles -->
+  <circle cx="220" cy="320" r="12" fill="#B3E5FC" fill-opacity="0.6"/>
+  <circle cx="260" cy="350" r="8" fill="#B3E5FC" fill-opacity="0.6"/>
+  <circle cx="290" cy="330" r="10" fill="#B3E5FC" fill-opacity="0.6"/>
+  <circle cx="190" cy="340" r="6" fill="#B3E5FC" fill-opacity="0.6"/>
+</svg> 

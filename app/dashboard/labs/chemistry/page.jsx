@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Slider } from "@/components/ui/slider";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
@@ -55,7 +56,7 @@ const ChemistryVirtualLab = () => {
       color: '#212121',
       electronConfiguration: '1s² 2s² 2p²',
       shells: [2, 4],
-      description: 'The basis of organic chemistry, carbon is the 15th most abundant element in the Earth's crust.'
+      description: 'The basis of organic chemistry, carbon is the 15th most abundant element in the Earth\'s crust.'
     },
     oxygen: {
       symbol: 'O',
@@ -197,7 +198,18 @@ const ChemistryVirtualLab = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Chemistry Virtual Lab</h1>
+      <div className="flex items-center justify-center mb-6">
+        <div className="mr-4">
+          <Image 
+            src="/chemistry-logo.svg" 
+            alt="Chemistry Lab Logo" 
+            width={60} 
+            height={60} 
+            className="rounded-full bg-blue-100 p-2"
+          />
+        </div>
+        <h1 className="text-3xl font-bold">Chemistry Virtual Lab</h1>
+      </div>
       
       <div className="bg-white p-4 rounded-lg shadow-md mb-6">
         <div className="flex space-x-4 border-b pb-4">

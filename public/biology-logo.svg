@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cell structure -->
+  <circle cx="256" cy="256" r="160" fill="#E8F5E9" stroke="#4CAF50" stroke-width="8"/>
+  
+  <!-- Cell membrane -->
+  <circle cx="256" cy="256" r="160" stroke="#81C784" stroke-width="12" stroke-dasharray="8 12"/>
+  
+  <!-- Nucleus -->
+  <circle cx="256" cy="256" r="60" fill="#C5E1A5" stroke="#7CB342" stroke-width="4"/>
+  
+  <!-- DNA helix -->
+  <path d="M216 216C226 226 246 226 256 236C266 246 286 246 296 256C306 266 326 266 336 276" stroke="#3949AB" stroke-width="6" stroke-linecap="round"/>
+  <path d="M216 276C226 266 246 266 256 256C266 246 286 246 296 236C306 226 326 226 336 216" stroke="#D32F2F" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Mitochondria -->
+  <ellipse cx="176" cy="320" rx="30" ry="20" fill="#FFCCBC" stroke="#FF5722" stroke-width="4"/>
+  <path d="M156 320C156 320 166 315 176 320C186 325 196 315 196 320" stroke="#FF5722" stroke-width="4"/>
+  
+  <!-- Endoplasmic reticulum -->
+  <path d="M340 320C340 310 320 300 320 290C320 280 340 270 340 260" stroke="#1E88E5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M320 320C320 310 340 300 340 290C340 280 320 270 320 260" stroke="#1E88E5" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Golgi apparatus -->
+  <path d="M350 200C360 195 370 200 380 195C390 190 400 195 410 190" stroke="#FFA000" stroke-width="6" stroke-linecap="round"/>
+  <path d="M350 210C360 205 370 210 380 205C390 200 400 205 410 200" stroke="#FFA000" stroke-width="6" stroke-linecap="round"/>
+  <path d="M350 220C360 215 370 220 380 215C390 210 400 215 410 210" stroke="#FFA000" stroke-width="6" stroke-linecap="round"/>
+</svg> 
